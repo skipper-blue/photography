@@ -1,1 +1,87 @@
-<!DOCTYPE html><html><head><title>Events Booking</title><meta name='description' content='Book photography events for weddings, birthdays, graduations, and more. Professional event coverage in Narok, Kenya.'><meta name='keywords' content='event booking, wedding photography, birthday photos, graduation, corporate events'><meta property='og:title' content='Events Booking - SKIPPER Photography'><meta property='og:description' content='Book your special event photography today.'><meta property='og:image' content='https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80'><meta property='og:url' content='https://SKIPPERphotography.com/events-booking.html'><link rel='stylesheet' href='style.css'></head><body><div class='topbar'><div class='logo'>SKIPPER<span>PHOTOGRAPHY</span></div><nav class='nav'><a href='index.html'>Home</a><a href='portfolio.html'>Portfolio</a><a href='events-booking.html' class='active'>Events Booking</a><a href='pricing.html'>Pricing</a><a href='upgrades.html'>Upgrades</a><a href='about.html'>About</a><a href='blog.html'>Blog</a><a href='contact.html'>Contact</a></nav><button class='menu-toggle' aria-label='Toggle navigation' onclick='toggleMenu()'>☰</button></div><div class='nav-mobile' id='navMobile'><a href='index.html'>Home</a><a href='portfolio.html'>Portfolio</a><a href='events-booking.html' class='active'>Events Booking</a><a href='pricing.html'>Pricing</a><a href='upgrades.html'>Upgrades</a><a href='about.html'>About</a><a href='blog.html'>Blog</a><a href='contact.html'>Contact</a></div><div class='nav-backdrop' id='navBackdrop' onclick='closeMenu()'></div><div class='container section'><h1>Book Your Event</h1><p>Select your event type and fill in the details below.</p><form><select id='eventType'><option>Weddings</option><option>Birthdays</option><option>Graduation</option><option>Baby Shower</option><option>Corporate Events</option><option>Outdoor Shoots</option><option>Custom Event Request</option></select><input type='date' placeholder='Event Date'><input placeholder='Location'><input type='number' placeholder='Guest Size'><select id='package'><option>Basic Package</option><option>Standard Package</option><option>Premium Package</option><option>Luxury Package</option><option>Event Full-Day Coverage Package</option></select><textarea rows='5' placeholder='Additional Details'></textarea><button class='btn'>Submit Booking</button></form></div><a class='whatsapp' href='https://wa.me/254700000000' target='_blank'>💬</a><a class='sticky-booking' href='events-booking.html'>📅</a><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events Booking - SKIPPER Photography</title>
+  <meta name='description' content='Book photography events for weddings, birthdays, graduations, and more. Professional event coverage in Narok, Kenya.'>
+  <meta name='keywords' content='event booking, wedding photography, birthday photos, graduation, corporate events'>
+  <meta property='og:title' content='Events Booking - SKIPPER Photography'>
+  <meta property='og:description' content='Book your special event photography today.'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <div class='topbar container'>
+    <div class='logo'>SKIPPER<span>PHOTOGRAPHY</span></div>
+    <nav class='nav'>
+      <a href='index.html'>Home</a>
+      <a href='portfolio.html'>Portfolio</a>
+      <a href='events-booking.html' class='active'>Events Booking</a>
+      <a href='pricing.html'>Pricing</a>
+      <a href='upgrades.html'>Upgrades</a>
+      <a href='about.html'>About</a>
+      <a href='blog.html'>Blog</a>
+      <a href='contact.html'>Contact</a>
+    </nav>
+    <button class='menu-toggle' aria-label='Toggle navigation' onclick='toggleMenu()'>?</button>
+  </div>
+  <div class='nav-mobile' id='navMobile'>
+    <a href='index.html'>Home</a>
+    <a href='portfolio.html'>Portfolio</a>
+    <a href='events-booking.html' class='active'>Events Booking</a>
+    <a href='pricing.html'>Pricing</a>
+    <a href='upgrades.html'>Upgrades</a>
+    <a href='about.html'>About</a>
+    <a href='blog.html'>Blog</a>
+    <a href='contact.html'>Contact</a>
+  </div>
+  <div class='nav-backdrop' id='navBackdrop' onclick='closeMenu()'></div>
+  <section class='section'>
+    <div class='container'>
+      <div class='section-title'>Events Booking</div>
+      <p class='section-subtitle'>Book premium event coverage for weddings, birthdays, corporate gatherings and more.</p>
+      <div class='contact-grid'>
+        <div class='contact-info'>
+          <div class='info-card'>
+            <h3>Event type</h3>
+            <p>Weddings, birthdays, graduations and corporate events.</p>
+          </div>
+          <div class='info-card'>
+            <h3>Delivery</h3>
+            <p>High-resolution digital delivery plus optional prints.</p>
+          </div>
+          <div class='info-card'>
+            <h3>Support</h3>
+            <p>Fast booking follow-up and event planning guidance.</p>
+          </div>
+        </div>
+        <div class='contact-form'>
+          <select>
+            <option>Weddings</option>
+            <option>Birthdays</option>
+            <option>Graduations</option>
+            <option>Corporate Events</option>
+            <option>Outdoor Shoots</option>
+            <option>Custom Requests</option>
+          </select>
+          <input type='date' />
+          <input type='text' placeholder='Location' />
+          <input type='number' placeholder='Guest size' />
+          <select>
+            <option>Basic Package</option>
+            <option>Standard Package</option>
+            <option>Premium Package</option>
+            <option>Luxury Package</option>
+            <option>Full Day Coverage</option>
+          </select>
+          <textarea placeholder='Additional details'></textarea>
+          <button class='btn'>Submit Booking</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a class='whatsapp' href='https://wa.me/254700000000' target='_blank'>??</a>
+  <a class='sticky-booking' href='events-booking.html'>??</a>
+  <script src='script.js'></script>
+</body>
+</html>

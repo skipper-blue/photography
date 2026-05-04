@@ -1,1 +1,66 @@
-<!DOCTYPE html><html><head><title>Portfolio</title><meta name='description' content='View our stunning photography portfolio showcasing portraits, events, and outdoor shoots.'><meta name='keywords' content='photography portfolio, portraits, events, outdoor photography'><meta property='og:title' content='Portfolio - SKIPPER Photography'><meta property='og:description' content='Explore our collection of timeless photographic moments.'><meta property='og:image' content='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80'><meta property='og:url' content='https://SKIPPERphotography.com/portfolio.html'><link rel='stylesheet' href='style.css'></head><body><div class='topbar'><div class='logo'>SKIPPER<span>PHOTOGRAPHY</span></div><nav class='nav'><a href='index.html'>Home</a><a href='portfolio.html' class='active'>Portfolio</a><a href='events-booking.html'>Events Booking</a><a href='pricing.html'>Pricing</a><a href='upgrades.html'>Upgrades</a><a href='about.html'>About</a><a href='blog.html'>Blog</a><a href='contact.html'>Contact</a></nav><button class='menu-toggle' aria-label='Toggle navigation' onclick='toggleMenu()'>☰</button></div><div class='nav-mobile' id='navMobile'><a href='index.html'>Home</a><a href='portfolio.html' class='active'>Portfolio</a><a href='events-booking.html'>Events Booking</a><a href='pricing.html'>Pricing</a><a href='upgrades.html'>Upgrades</a><a href='about.html'>About</a><a href='blog.html'>Blog</a><a href='contact.html'>Contact</a></div><div class='nav-backdrop' id='navBackdrop' onclick='closeMenu()'></div><div class='container section'><h1>Portfolio</h1><br><div class='grid grid-3 gallery'><img src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80'><img src='https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80'><img src='https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80'></div></div><a class='whatsapp' href='https://wa.me/254700000000' target='_blank'>💬</a><a class='sticky-booking' href='events-booking.html'>📅</a><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - SKIPPER Photography</title>
+  <meta name='description' content='View our stunning photography portfolio showcasing portraits, events, and outdoor shoots.'>
+  <meta name='keywords' content='photography portfolio, portraits, events, outdoor photography'>
+  <meta property='og:title' content='Portfolio - SKIPPER Photography'>
+  <meta property='og:description' content='Explore our collection of timeless photographic moments.'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <div class='topbar container'>
+    <div class='logo'>SKIPPER<span>PHOTOGRAPHY</span></div>
+    <nav class='nav'>
+      <a href='index.html'>Home</a>
+      <a href='portfolio.html' class='active'>Portfolio</a>
+      <a href='events-booking.html'>Events Booking</a>
+      <a href='pricing.html'>Pricing</a>
+      <a href='upgrades.html'>Upgrades</a>
+      <a href='about.html'>About</a>
+      <a href='blog.html'>Blog</a>
+      <a href='contact.html'>Contact</a>
+    </nav>
+    <button class='menu-toggle' aria-label='Toggle navigation' onclick='toggleMenu()'>?</button>
+  </div>
+  <div class='nav-mobile' id='navMobile'>
+    <a href='index.html'>Home</a>
+    <a href='portfolio.html' class='active'>Portfolio</a>
+    <a href='events-booking.html'>Events Booking</a>
+    <a href='pricing.html'>Pricing</a>
+    <a href='upgrades.html'>Upgrades</a>
+    <a href='about.html'>About</a>
+    <a href='blog.html'>Blog</a>
+    <a href='contact.html'>Contact</a>
+  </div>
+  <div class='nav-backdrop' id='navBackdrop' onclick='closeMenu()'></div>
+  <section class='section'>
+    <div class='container'>
+      <div class='section-title'>Portfolio highlights</div>
+      <p class='section-subtitle'>A selection of recent work showing portrait, event and outdoor photography that feels polished and memorable.</p>
+      <div class='portfolio-filters'>
+        <button class='portfolio-filter active'>All</button>
+        <button class='portfolio-filter'>Portraits</button>
+        <button class='portfolio-filter'>Events</button>
+        <button class='portfolio-filter'>Lifestyle</button>
+      </div>
+      <div class='gallery-grid'>
+        <div class='gallery-item'><img loading='lazy' src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=80' alt='Elegant portrait'></div>
+        <div class='gallery-item'><img loading='lazy' src='https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=900&q=80' alt='Couple shoot'></div>
+        <div class='gallery-item'><img loading='lazy' src='https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80' alt='Event photography'></div>
+        <div class='gallery-item'><img loading='lazy' src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80' alt='Lifestyle photography'></div>
+        <div class='gallery-item'><img loading='lazy' src='https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=900&q=80' alt='Outdoor portraits'></div>
+        <div class='gallery-item'><img loading='lazy' src='https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?auto=format&fit=crop&w=900&q=80' alt='Styled photoshoot'></div>
+      </div>
+      <div style='text-align:center;margin-top:2rem;'>
+        <a class='btn' href='portfolio.html'>Load More</a>
+      </div>
+    </div>
+  </section>
+  <a class='whatsapp' href='https://wa.me/254700000000' target='_blank'>??</a>
+  <a class='sticky-booking' href='events-booking.html'>??</a>
+  <script src='script.js'></script>
+</body>
+</html>
