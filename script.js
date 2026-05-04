@@ -87,4 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', () => {
     if (window.innerWidth > 768) closeMenu();
   });
+
+  updateMenuIcon(false); // Initialize the menu icon
 });
