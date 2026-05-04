@@ -1,14 +1,19 @@
-document.querySelectorAll('.year').forEach(el=>el.textContent=new Date().getFullYear());
-window.addEventListener('scroll',()=>{document.querySelector('.topbar').style.boxShadow=window.scrollY>20?'0 10px 30px rgba(0,0,0,.35)':'none';});
+document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
+window.addEventListener('scroll', () => {
+  const topbar = document.querySelector('.topbar');
+  if (topbar) topbar.style.boxShadow = window.scrollY > 20 ? '0 10px 30px rgba(0,0,0,.35)' : 'none';
+});
 
 function animateCounter(id, target, duration) {
   let start = 0;
   const increment = target / (duration / 16);
   const timer = setInterval(() => {
     start += increment;
-    document.getElementById(id).textContent = Math.floor(start);
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = Math.floor(start);
     if (start >= target) {
-      document.getElementById(id).textContent = target;
+      el.textContent = target;
       clearInterval(timer);
     }
   }, 16);
@@ -38,6 +43,48 @@ if (slides) {
   setInterval(() => { slideIndex++; showSlide(slideIndex); }, 5000);
 }
 
-function toggleMenu() {
-  document.getElementById('navMobile').classList.toggle('active');
+function updateMenuIcon(isOpen) {
+  const button = document.querySelector('.menu-toggle');
+  if (!button) return;
+  button.innerText = isOpen ? '✕' : '☰';
+  button.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
 }
+
+function openMenu() {
+  const navMobile = document.getElementById('navMobile');
+  const backdrop = document.getElementById('navBackdrop');
+  if (!navMobile || !backdrop) return;
+  navMobile.classList.add('active');
+  backdrop.classList.add('active');
+  document.body.classList.add('nav-open');
+  updateMenuIcon(true);
+}
+
+function closeMenu() {
+  const navMobile = document.getElementById('navMobile');
+  const backdrop = document.getElementById('navBackdrop');
+  if (!navMobile || !backdrop) return;
+  navMobile.classList.remove('active');
+  backdrop.classList.remove('active');
+  document.body.classList.remove('nav-open');
+  updateMenuIcon(false);
+}
+
+function toggleMenu() {
+  const navMobile = document.getElementById('navMobile');
+  if (navMobile && navMobile.classList.contains('active')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.nav-mobile a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMenu();
+  });
+});
